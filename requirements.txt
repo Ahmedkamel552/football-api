@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+pyodbc
+psycopg2-binary
+pandas
