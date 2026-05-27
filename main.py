@@ -4,8 +4,7 @@ import psycopg2
 
 app = FastAPI()
 
-DATABASE_URL = os.environ.get(
-    "DATABASE_URL", "postgresql://postgres:FjwnbBWUzdrUxlWyjrIBpAnqxNBtrJZJ@postgres.railway.internal:5432/railway")
+DATABASE_URL = os.environ.get("DATABASE_URL")
 
 
 def get_db_connection():
