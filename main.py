@@ -1,6 +1,5 @@
-import psycopg2
+import psycopg2  # PostgreSQL driver
 from fastapi import FastAPI
-
 app = FastAPI()
 
 DATABASE_URL = "postgresql://postgres:FjwnbBWUzdrUxlWyjrIBpAnqxNBtrJZJ@postgres.railway.internal:5432/railway"
