@@ -1,9 +1,11 @@
+import os
 from fastapi import FastAPI, HTTPException
 import psycopg2
 
 app = FastAPI()
 
-DATABASE_URL = "postgresql://postgres:FjwnbBWUzdrUxlWyjrIBpAnqxNBtrJZJ@postgres.railway.internal:5432/railway"
+DATABASE_URL = os.environ.get(
+    "DATABASE_URL", "postgresql://postgres:FjwnbBWUzdrUxlWyjrIBpAnqxNBtrJZJ@postgres.railway.internal:5432/railway")
 
 
 def get_db_connection():
@@ -75,3 +77,7 @@ def get_club_players(club_name: str):
         raise HTTPException(
             status_code=404, detail=f"Club '{club_name}' not found")
     return [{"name": row[0], "position": row[1], "market_value": row[2]} for row in rows]
+
+
+DATABASE_URL = os.environ.get(
+    "DATABASE_URL", "postgresql://postgres:FjwnbBWUzdrUxlWyjrIBpAnqxNBtrJZJ@postgres.railway.internal:5432/railway")
