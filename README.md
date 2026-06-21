@@ -18,8 +18,6 @@ A live, high-performance REST API built with FastAPI and Python, connected to a 
 * **Live Cloud Database:** Integrated with a production PostgreSQL database on Railway cloud.
 * **Auto-Documented:** Interactive documentation automatically built via Swagger UI (`/docs`).
 * **Pydantic Validation:** Strict data filtering and request schema checking.
-* **Idempotency & Constraints:** Designed with data integrity protections to handle high concurrency seamlessly.
-
 ---
 
 ## 🛣️ API Endpoints Preview
