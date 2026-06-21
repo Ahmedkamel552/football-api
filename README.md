@@ -2,7 +2,7 @@
 
 A live, high-performance REST API built with FastAPI and Python, connected to a cloud-hosted PostgreSQL database. This system serves data for over 5,000+ football players and 450+ clubs in real time.
 
-🚀 **Live Link:** [Explore the Swagger UI API Documentation](https://your-railway-url-here.railway.app/docs)
+🚀 **Live Link:** [Explore the Swagger UI API Documentation](https://football-api-production-7cce.up.railway.app/docs)
 
 ---
 
