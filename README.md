@@ -24,12 +24,13 @@ A live, high-performance REST API built with FastAPI and Python, connected to a 
 
 ## 🛣️ API Endpoints Preview
 
-| HTTP Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| `GET` | `/matches/{match_id}` | Fetches a single match details using external APIs |
-| `GET` | `/players` | Returns full player squads filtered by club |
-| `GET` | `/docs` | Interactive Swagger API playground |
-
+HTTP Method | Endpoint | Description
+GET | / | Health check
+GET | /players | Returns top players by market value
+GET | /clubs | Returns all clubs
+GET | /clubs/{club_name}/players | Returns squad for a specific club
+POST | /players/filter | Filter players by position and market value range
+GET | /docs | Interactive Swagger API playground
 ---
 
 ## 💻 Local Installation & Setup
